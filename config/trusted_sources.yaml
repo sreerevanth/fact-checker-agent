@@ -1,0 +1,110 @@
+# =============================================================================
+# Trusted Sources Configuration
+# Credibility scores: 1.0 = highest trust, 0.0 = lowest trust
+# =============================================================================
+
+fact_check_organizations:
+  - name: "Reuters Fact Check"
+    url: "https://www.reuters.com/fact-check/"
+    feed: "https://feeds.reuters.com/reuters/topNews"
+    credibility: 0.97
+    category: "fact_checker"
+
+  - name: "AP Fact Check"
+    url: "https://apnews.com/hub/ap-fact-check"
+    feed: "https://feeds.apnews.com/rss/apf-factcheck"
+    credibility: 0.97
+    category: "fact_checker"
+
+  - name: "Snopes"
+    url: "https://www.snopes.com"
+    feed: "https://www.snopes.com/feed/"
+    credibility: 0.90
+    category: "fact_checker"
+
+  - name: "PolitiFact"
+    url: "https://www.politifact.com"
+    feed: "https://www.politifact.com/rss/all/"
+    credibility: 0.88
+    category: "fact_checker"
+
+  - name: "FactCheck.org"
+    url: "https://www.factcheck.org"
+    feed: "https://www.factcheck.org/feed/"
+    credibility: 0.92
+    category: "fact_checker"
+
+  - name: "Full Fact"
+    url: "https://fullfact.org"
+    feed: "https://fullfact.org/feed/"
+    credibility: 0.91
+    category: "fact_checker"
+
+major_news_outlets:
+  - name: "Reuters"
+    url: "https://www.reuters.com"
+    feed: "https://feeds.reuters.com/reuters/topNews"
+    credibility: 0.95
+    category: "wire_service"
+
+  - name: "Associated Press"
+    url: "https://apnews.com"
+    feed: "https://feeds.apnews.com/rss/topnews"
+    credibility: 0.95
+    category: "wire_service"
+
+  - name: "BBC News"
+    url: "https://www.bbc.com/news"
+    feed: "https://feeds.bbci.co.uk/news/rss.xml"
+    credibility: 0.93
+    category: "international"
+
+  - name: "The Guardian"
+    url: "https://www.theguardian.com"
+    feed: "https://www.theguardian.com/world/rss"
+    credibility: 0.88
+    category: "international"
+
+  - name: "NPR"
+    url: "https://www.npr.org"
+    feed: "https://feeds.npr.org/1001/rss.xml"
+    credibility: 0.90
+    category: "national"
+
+scientific_sources:
+  - name: "WHO"
+    url: "https://www.who.int"
+    credibility: 0.96
+    category: "health_authority"
+
+  - name: "CDC"
+    url: "https://www.cdc.gov"
+    credibility: 0.95
+    category: "health_authority"
+
+  - name: "NIH"
+    url: "https://www.nih.gov"
+    credibility: 0.96
+    category: "research"
+
+  - name: "PubMed"
+    url: "https://pubmed.ncbi.nlm.nih.gov"
+    credibility: 0.94
+    category: "research"
+
+government_sources:
+  - name: "USA.gov"
+    url: "https://www.usa.gov"
+    credibility: 0.92
+    category: "government"
+
+  - name: "data.gov"
+    url: "https://www.data.gov"
+    credibility: 0.93
+    category: "government"
+
+low_credibility_domains:
+  - "theonion.com"       # satire
+  - "babylonbee.com"    # satire
+  - "clickhole.com"     # satire
+  # Add known misinformation domains here

@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "fact-checker"
+    static_configs:
+      - targets: ["fact-checker:9090"]
+    metrics_path: /metrics

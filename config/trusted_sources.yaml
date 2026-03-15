@@ -2,7 +2,6 @@
 # Trusted Sources Configuration
 # Credibility scores: 1.0 = highest trust, 0.0 = lowest trust
 # =============================================================================
-
 fact_check_organizations:
   - name: "Reuters Fact Check"
     url: "https://www.reuters.com/fact-check/"
